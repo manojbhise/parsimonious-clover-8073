@@ -1,0 +1,42 @@
+.lbprt1{
+    
+    background-image: url('https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-collage-top-large%402x.dcc5ac56.png&w=1200&q=75');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+    padding: 35px 17% 0px 17%;
+    line-height: 25px;
+    
+}
+.lbp1t{
+    width: 55%;
+}
+.lbp1t>h1{
+    font-size: 65px;
+    font-weight: 1000;
+    line-height: 60px;
+    margin-bottom: 70px;
+}
+.lbp1t>p{
+    font-size: 20px;
+    margin-right: 25px;
+}
+.lbp1btn{
+    padding: 15px 80px ;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: rgb(0,102,238);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.lbp1btn:hover{
+    cursor: pointer;
+}
+.lbp1spn{
+    color:rgb(0,102,238);
+}
+.lbp1spn:hover{
+    cursor: pointer;
+}
