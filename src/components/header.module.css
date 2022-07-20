@@ -1,0 +1,25 @@
+.headcar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
+}
+.headcar>img{
+    width: 200px;
+    height: 30px;
+}
+.lscar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    
+}
+.lscar>a{
+    text-decoration: none;
+    color: rgb(0,102,238);
+}
+.headlog{
+    padding: 0px 10px;
+    border-right: 1px solid rgb(218, 215, 215);
+}
