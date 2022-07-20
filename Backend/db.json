@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "name": "roy",
+      "age": 23,
+      "username": "abhinav1",
+      "password": "passwordhere"
+    }
+    
+  ]
+}
