@@ -1,8 +1,9 @@
 .srchcar{
     background-color: rgb(255,221,51);
-    margin-top: -25px;
+   
+    /* margin-top: -25px; */
     text-align: center;
-    padding-bottom: 200px;
+   
 }
 .srchwhiteline{
     width: 80%;
@@ -43,12 +44,35 @@
 .sh1car{
  width: 45%;
  margin: auto;
+ padding: 20px;
 }
 .spcar{
     width: 45%;
     margin: auto;
+    padding: 20px;
 }
 .spcar>p{
     font-size: 20px;
 }
+.searchbg{
+    background-image: url('https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-collage-search-bottom-small%402x.f0b506c7.png&w=1080&q=75');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 200px;
+}
 
+@media all and (min-width:401px) and (max-width:720px){
+    .sh1car{
+        width: 90%;
+        margin: auto;
+        
+    }
+    .spcar{
+        width: 90%;
+        margin: auto;
+        
+    }
+    .searchbarcar{
+        width: 80%;
+    }
+}

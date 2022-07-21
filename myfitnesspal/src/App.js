@@ -12,7 +12,7 @@ import BlogHomePage from "./pages/BlogHomePage";
 import Mainroutes from './pages/exercise/Mainroutes';
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="App">
       {isLoggedIn ? (

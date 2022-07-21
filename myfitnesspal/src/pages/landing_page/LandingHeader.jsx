@@ -1,21 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer';
+
+import Drawer from './Drawer';
 import style from "./header.module.css";
 import LandBody from './LandBody';
-import Navbar from './Navbar';
+import LandingNavbar from './LandingNavbar';
+
 
 const LandingHeader = () => {
-    
+  const [isflag, setisflag] = useState(false)
+ 
+  let changeflagtotrue=()=>{
+    setisflag(true)
+  }
+  let changeflagtofalse=()=>{
+      setisflag(false)
+  }
   return (
     <div>
+      {isflag?<Drawer changeflagtofalse={changeflagtofalse}/>:""}
+    <div className={isflag?style.blur:""}>
         <div className={style.headcar}>
+            <i className="fa-solid fa-bars" onClick={changeflagtotrue}></i>
             <img src="https://i.pinimg.com/originals/53/24/0a/53240a99b0159c5a16937e5ac479f78a.png" alt="" />
+            <h2>myfitnesspal</h2>
             <div className={style.lscar}>
-                <a href='' className={style.headlog}>Log In</a>
-                <a href=''>Sign Up</a>
+                <Link to="" className={style.headlog}>Log In</Link>
+                <Link to="">Sign Up</Link>
             </div>
         </div>
-        <Navbar/>
+        <LandingNavbar/>
         <LandBody/>
+        
+    </div>
+    <Footer/>
     </div>
   )
 }
