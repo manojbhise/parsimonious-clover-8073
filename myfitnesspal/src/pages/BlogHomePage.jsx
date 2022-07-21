@@ -7,6 +7,7 @@ const BlogHomePage = () => {
     <div className={style.blogMainContainer}>
       <TrendingArticles />
       <LatestArticles />
+      <h1>hello manoj</h1>
     </div>
   );
 };
