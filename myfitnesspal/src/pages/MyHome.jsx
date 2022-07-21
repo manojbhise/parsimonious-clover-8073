@@ -22,7 +22,7 @@ justify-content: space-between;
 `
 const LeftDiv = styled.div`
 width: 65%;
-border: 1px solid red;
+border: 1px solid black;
 `
 const RightDiv = styled.div`
 width: 29%;
