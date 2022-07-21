@@ -14,7 +14,7 @@ import Blog_Nav from "./components/Blog_Nav";
 import Blog_Footer from "./components/Blog_Footer";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="App">
       {isLoggedIn ? (

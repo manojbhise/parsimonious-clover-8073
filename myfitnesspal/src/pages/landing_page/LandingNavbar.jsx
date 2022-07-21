@@ -1,13 +1,13 @@
 import React from 'react'
-import style from "./navbar.module.css";
+import style from "./landingnavbar.module.css";
 
-const Navbar = () => {
+const LandingNavbar = () => {
     let arr=["ABOUT","FOOD","EXERCISE","APPS","COMMUNITY","BLOG","PREMIUM"]
   return (
     <div>
         <div className={style.navcar}>
             {arr.map((e,i)=>(
-                <div>
+                <div key={i}>
                 <h5 key={i}>{e}</h5>
                 </div>
             ))}
@@ -16,4 +16,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default LandingNavbar

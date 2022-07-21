@@ -29,14 +29,25 @@
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .lbp1btn:hover{
     cursor: pointer;
 }
 .lbp1spn{
     color:rgb(0,102,238);
+    text-decoration: none;
 }
 .lbp1spn:hover{
     cursor: pointer;
+}
+@media all and (min-width:401px) and (max-width:720px){
+    .lbprt1{
+        padding: 35px;
+        text-align: center;
+    }
+    .lbp1t{
+        width: 100%;
+    }
 }

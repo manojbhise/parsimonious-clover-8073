@@ -12,9 +12,11 @@ const Search = () => {
             <div className={style.spcar}>
                 <p>What's in your food? Learn about calorie count, nutrition information and serving size.</p>
             </div>
-            <div className={style.searchbarcar}>
-                <input type="text" placeholder='Get the nutrition for any food, like an apple' />
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div className={style.searchbg}>
+                <div className={style.searchbarcar}>
+                    <input type="text" placeholder='Get the nutrition for any food, like an apple' />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
            
         </div>

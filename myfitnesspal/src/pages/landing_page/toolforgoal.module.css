@@ -1,0 +1,51 @@
+.tfgcar{
+    text-align: center;
+    margin-top: 70px;
+}
+.tfggrid{
+    padding: 50px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    width: 70%;
+
+}
+.tfgh1{
+    font-size: 45px;
+    font-weight: 800;
+}
+.tfgcar p{
+    font-size: 18px;
+}
+.tfgcar h5{
+    font-size: 20px;
+}
+.tfghpcar{
+    margin: auto;
+    width: 45%;
+}
+.tfgbtn{
+    border: none;
+    outline: none;
+    padding: 20px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: rgb(0,102,238);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+}
+.tfgbtn:hover{
+    cursor: pointer;
+}
+
+@media all and (min-width:401px) and (max-width:720px){
+    .tfggrid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tfghpcar{
+        width: 90%;
+    }
+}
