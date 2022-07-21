@@ -1,0 +1,89 @@
+.Today{
+    margin-top: 50px;
+    width:760px;
+    height: 149px;
+margin-bottom: 150px;
+}
+.cardios{
+    color:#00548f;
+    font-weight: 700;
+    font-size: 18px;
+}
+.cardios>div:first-child{
+   
+}
+
+.exe{
+display: flex;
+justify-content: space-between;
+
+
+}
+
+.divided{
+   
+    width: 760px;
+    height:100px;
+}
+.divided1{
+    
+  
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    width: 760px;
+    height:100px;
+}
+.dividedpara{
+    background-color:white;
+    width: 760px;
+    height:100px;
+    border:1px solid black;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.divided1:hover{
+    border:none;
+  
+}
+.input{
+    background-color: #f7f7f7;
+    width: 750px;
+    height:95px;
+}
+.input:hover{
+    border:none;
+}
+
+.diva{
+    width:760px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-top: 50px;
+  }
+
+  .butt{
+    width:760px;
+    display: inline-block;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+}
+.button{
+margin-top: 30px;
+    font-size: 13px;
+    width: auto;
+    display: inline-block;
+    border: 1px solid #408140;
+    border-radius: 5px;
+    padding: 8px 25px;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background-color: #51a351;
+}
+
+.button:hover{
+    border: 2px solid #144614;
+}
+  
