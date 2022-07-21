@@ -1,5 +1,6 @@
 .navcar{
     display: flex;
+    height: 43px;
     /* gap: 25px; */
     background-color: rgb(0,102,238);
     color: white;
