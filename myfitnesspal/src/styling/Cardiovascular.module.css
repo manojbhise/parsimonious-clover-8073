@@ -37,6 +37,11 @@ display: flex;
 margin-left:1px;
    
 }
+.cardios{
+    color:#00548f;
+    font-weight: 700;
+    font-size: 18px;
+}
 .Second{
     width:366px;
     height:47px; 

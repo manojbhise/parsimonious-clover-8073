@@ -5,7 +5,7 @@ const Strength = () => {
     <>
       <div>
         <div className={Styles.cardio}>
-          <div>Strength Training</div>
+          <div className={Styles.cardios}>Strength Training</div>
           <div className={Styles.side}>
             <p>Sets</p>
             <p className={Styles.p}>Reps/Set</p>
@@ -13,17 +13,17 @@ const Strength = () => {
           </div>
         </div>
         <div className={Styles.Second}>
-          <div>
-            <p>Add Exercise </p>
-            <p className={Styles.para1}>|</p>
-            <p className={Styles.para}> Quick Tools </p>
-          </div>
-          <div className={Styles.diva}></div>
-          <div className={Styles.diva}></div>
+            <div>
+              <p>Add Exercise </p>  
+              <p className={Styles.para1}>|</p>
+              <p className={Styles.para}> Quick Tools </p>  
+            </div>
+            <div className={Styles.diva}></div>
+            <div className={Styles.diva}></div>
         </div>
       </div>
     </>
   );
 };
 
-export default Strength;
+export default Strength ;
