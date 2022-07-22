@@ -12,12 +12,14 @@ import BlogHomePage from "./pages/BlogHomePage";
 import Mainroutes from './pages/exercise/Mainroutes';
 import Blog_Nav from "./components/Blog_Nav";
 import Blog_Footer from "./components/Blog_Footer";
+import MainPage from "./pages/exercise/MainPage";
+import Premium from "./pages/premium/premium";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   return (
     <div className="App">
-      {isLoggedIn ? (
+     {isLoggedIn ? (
         <div>
           <Header />
 
@@ -35,13 +37,16 @@ function App() {
             </>
             } />
             <Route path="/exercise" element={<Mainroutes />} />
+            {/* < Route path="/apps" element={<MainPage/>}/> */}
+            <Route path="/premium" element={<Premium />} /> 
           </Routes>
 
           <Footer />
         </div>
       ) : (
         <LandingHeader />
-      )}
+      )} 
+     
     </div>
   );
 }
