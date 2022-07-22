@@ -1,0 +1,83 @@
+.feacture{
+    margin-top: 80px;
+    width:700px;
+    height: 683px;
+    
+    
+    
+    }
+    .feacture>h2{
+        height:28px;
+        color: #0a5282;
+        font-size: 22px;
+        font-weight: bolder;
+        margin: 17px 0 20px;
+        padding-bottom: 11px;
+        border-bottom: 1px solid #e6e6e6
+    }
+    
+    .Apps{
+       
+        height: 683px;
+    display: grid;
+    grid-template-columns: repeat(3,230px);
+    grid-template-rows: repeat(5,150px);
+    
+    
+    }
+    
+    .Apps1{
+        display: flex;
+    /* width:215px;
+    height: 75px; */
+    
+    }
+    .logo{
+        width:85px;
+        height: 85px;
+    }
+    .right{
+    box-sizing: border-box;
+        width:125px;
+        height: 85px;
+      
+        
+    }
+    .right>p:first-child{
+    margin-top: -5px;
+    margin-left: 10px;
+    font-size: 15px;
+    color:#2584c9
+    }
+    .right>p:first-child:hover{
+        color:yellow;
+    }
+    p+p{
+        margin-top: -5px;
+    margin-left: 10px;
+    font-size: 15px;
+    color:grey
+    }
+    .hidden{
+        display: none;
+    }
+    
+    .button{
+        margin-top: -5px;
+        width:100px;
+        margin-left: 15px;
+        display: inline-block;
+        border: 1px solid #d2d2d2;
+        border-radius: 5px;
+        padding:5px 10px;
+        text-align: center;
+        cursor: pointer;
+        color: #666666;
+        text-transform: capitalize;
+        background-color: #ebebeb;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.26, #fbfbfb), color-stop(0.75, #ebebeb));
+    
+    }
+    
+    
+    

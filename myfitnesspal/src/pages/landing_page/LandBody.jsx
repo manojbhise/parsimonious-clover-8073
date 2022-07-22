@@ -1,6 +1,9 @@
 import React from 'react'
+import Slider from './Slider';
+import ToolForGoal from './ToolForGoal';
 import style from "./landbody.module.css";
 import Search from './Search';
+import { Link } from 'react-router-dom';
 
 const LandBody = () => {
   return (
@@ -9,11 +12,13 @@ const LandBody = () => {
             <div className={style.lbp1t}>
                 <h1>Fitness starts with what you eat.</h1>
                 <p>Take control of your goals. Track calories, break down ingredients, and log activities with MyFitnessPal.</p>
-                <button className={style.lbp1btn}>START FOR FREE</button>
-                <p>Already have an Account? <span className={style.lbp1spn}>Login</span></p>
+                <Link to="/"><button className={style.lbp1btn}>START FOR FREE</button></Link>
+                <p>Already have an Account? <Link to="/login"  className={style.lbp1spn}>Login</Link></p>
             </div>
         </div>
         <Search/>
+        <ToolForGoal/>
+        <Slider/>
     </div>
   )
 }

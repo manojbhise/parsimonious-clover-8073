@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { BsFillBagCheckFill } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
+import { BsFillBagCheckFill } from 'react-icons/bs';
 
 const MainDiv = styled.div`
   width: 100%;
@@ -460,6 +461,8 @@ const Adv2 = styled.div`
 
 const MyHome = () => {
   const navigate = useNavigate();
+  const userpresent = localStorage.getItem('fitnesspal')
+
   return (
     <MainDiv>
       <AdvDiv>
@@ -538,6 +541,7 @@ const MyHome = () => {
               </div>
               <div>
                 <BsFillBagCheckFill style={{ fontSize: "30px" }} />
+              {/* <Progress hasStripe value={64} /> */}
               </div>
               <div>
                 <p></p>

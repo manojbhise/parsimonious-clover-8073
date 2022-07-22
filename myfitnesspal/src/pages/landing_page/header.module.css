@@ -23,3 +23,41 @@
     padding: 0px 10px;
     border-right: 1px solid rgb(218, 215, 215);
 }
+.headcar>h2{
+    display: none;
+    color:  rgb(0,102,238);
+}
+.headcar>i{
+    display: none;
+    color:  rgb(0,102,238);
+}
+.blur{
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+@media all and (min-width: 401px) and (max-width: 720px){
+    .lscar{
+        display: none;
+       
+    }.headcar{
+        height: 60px;
+        padding: 0px 20px;
+        gap: 30px;
+        justify-content:start;
+        align-items: center;
+        background-color:   rgb(0,102,238);;
+    }
+    .headcar>i{
+        display: block;
+        font-size: 25px;
+        color:white;
+    }
+    .headcar>img{
+        display: none;
+    }
+    .headcar>h2{
+        display: block;
+        color:white;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,36 @@
+.navcar{
+    display: flex;
+    align-items: center;
+    /* gap: 25px; */
+    background-color: rgb(0,102,238);
+    color: white;
+    padding: 0px 13.5%;
+   
+    
+}
+.navcar h5{
+ margin-bottom: 5px;
+ 
+}
+.navcar>div{
+    padding: 15px 20px;
+}
+.navcar>div:hover{
+    cursor: pointer;
+    background-color:rgb(2, 55, 124) ;
+}
+
+@media all and (min-width:401px) and (max-width:720px){
+    .navcar{
+        display: none;
+    }
+}
+
+@media all and (min-width:721px) and (max-width:980px){
+
+    .navcar{
+        justify-content: center;
+        padding: 0px 10px;
+    }
+
+}
