@@ -10,7 +10,7 @@ const Drawer = ({ changeflagtofalse }) => {
         <div onClick={changeflagtofalse} className={style.close}>X</div>
         <div className={style.dlog1}>
           <p className={style.dlogin}>Login</p>
-         <Link to={""}> <p className={`${style.blue1} ${style.pointer}`}>Register for Free</p></Link>
+         <Link to="/signup"> <p className={`${style.blue1} ${style.pointer}`}>Register for Free</p></Link>
         </div>
         <p>Email Id / Username</p>
         <input className={style.dinp}

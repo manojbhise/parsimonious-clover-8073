@@ -23,11 +23,11 @@ const LandingHeader = () => {
     <div className={isflag?style.blur:""}>
         <div className={style.headcar}>
             <i className="fa-solid fa-bars" onClick={changeflagtotrue}></i>
-            <img src="https://i.pinimg.com/originals/53/24/0a/53240a99b0159c5a16937e5ac479f78a.png" alt="" />
+           <Link to="/"><img src="https://i.pinimg.com/originals/53/24/0a/53240a99b0159c5a16937e5ac479f78a.png" alt="" /></Link>
             <h2>myfitnesspal</h2>
             <div className={style.lscar}>
-                <Link to="" className={style.headlog}>Log In</Link>
-                <Link to="">Sign Up</Link>
+                <Link to="/login" className={style.headlog}>Log In</Link>
+                <Link to="/signup">Sign Up</Link>
             </div>
         </div>
         <LandingNavbar/>

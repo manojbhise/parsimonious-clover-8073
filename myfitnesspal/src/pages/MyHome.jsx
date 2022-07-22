@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import { Progress } from "@chakra-ui/react";
-import { BsFillBagCheckFill } from 'react-icons/bs';
+import { BsFillBagCheckFill } from "react-icons/bs";
+import { MdMail } from "react-icons/md";
+// import { BsFillBagCheckFill } from 'react-icons/bs';
 
 const MainDiv = styled.div`
   width: 100%;
@@ -25,14 +26,6 @@ const BodyDiv = styled.div`
 `;
 const LeftDiv = styled.div`
   width: 65%;
-  border: 1px solid black;
-`;
-const RightDiv = styled.div`
-  width: 29%;
-  border: 1px solid red;
-  img {
-    width: 100%;
-  }
 `;
 
 const SummaryDiv = styled.div`
@@ -55,7 +48,7 @@ const Div2 = styled.div`
   align-items: center;
   margin-left: 13px;
   width: 60px;
-  margin-right: 13px;
+  margin-right: 24px;
   box-sizing: border-box;
   span {
     font-size: 30px;
@@ -71,19 +64,23 @@ const SummaryBodyUP = styled.div`
   width: 96%;
   height: 219px;
   // margin-top: 18px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 23% 72%;
+  grid-template-rows: 140px 55px;
+  gap: 10px;
   background: rgba(230, 233, 235, 0.724);
   justify-content: space-between;
   // margin-left: 18px;
 `;
 const LeftSummaryUP = styled.div`
-  width: 23%;
-  height: 140px;
+  // width: 23%;
+  // height: 140px;
   margin: 0;
   margin-top: 15px;
   margin-left: 15px;
   background: rgb(215, 213, 213);
   box-sizing: border-box;
+
   p {
     margin: 0;
     padding-top: 10px;
@@ -97,43 +94,15 @@ const LeftSummaryUP = styled.div`
     margin-top: 55px;
   }
 `;
-const DownSummaryUP = styled.div`
-margin-top: 90px;
-display: flex;
-justify-content: space-between;
-div{
-  margin: 3px;
-}
-div:first-child{
-// border: 1px solid black;
 
-  h1{
-    font-size: 20px;
-    color: rgba(6, 169, 169, 0.724);
-    span{
-      margin-left: 3px;
-    }
-  }
-  span{
-    font-size: 12px;
-    color: rgb(85, 86, 86);
-  }
-  span: last-child{
-    // border:1px solid red;
-  }
-}
-`
 const RightSummaryUP = styled.div`
-  width: 72%;
+  // width: 72%;
   display: grid;
   grid-template-columns: 39% 58%;
-  grid-template-rows: 62px 62px 40px;
+  grid-template-rows: 62px 52px;
   gap: 10px;
   margin-top: 15px;
 
-  div {
-    // border: 1px solid black;
-  }
   div:nth-child(1) > p:first-child {
     font-size: 12px;
     color: rgb(85, 86, 86);
@@ -150,14 +119,17 @@ const RightSummaryUP = styled.div`
     display: flex;
 
     input {
-      width: 110px;
+      width: 90px;
       height: 30px;
       margin: 5px;
       margin-top: 24px;
       padding-left: 5px;
-      border: 1px solid black;
+      border-radius: 5px;
+      border: 1px solid rgb(158, 157, 157);
     }
-
+    input:last-child {
+      width: 70px;
+    }
   }
   div:nth-child(4) {
     grid-area: 3/1/4/3;
@@ -166,51 +138,331 @@ const RightSummaryUP = styled.div`
     font-size: 10px;
     display: flex;
     grid-area: 2/1/3/3;
-    div:first-child{
+    div:first-child {
       border-right: 1px solid rgb(85, 86, 86);
     }
-    div:nth-child(3)>h5,div:nth-child(5)>h5{
+    div:nth-child(3) > h5,
+    div:nth-child(5) > h5 {
       margin-top: 10px;
       text-align: center;
     }
-    div:nth-child(3),div:nth-child(5){
+    div:nth-child(3),
+    div:nth-child(5) {
       width: 40px;
     }
-    div:nth-child(2),div:nth-child(6){
+    div:nth-child(2),
+    div:nth-child(6) {
       width: 60px;
     }
-    div{
+    div {
       width: 80px;
       display: inline-block;
       // border: 1px solid brown;
-      span{
+      span {
         margin-left: 4px;
         color: rgba(26, 26, 26, 0.724);
         font-size: 24px;
-        letter-spacing: .8px;
+        letter-spacing: 0.8px;
       }
-      h5{
-      margin-left: 4px;
+      h5 {
+        margin-left: 4px;
       }
     }
-    h5{
+    h5 {
       font-size: 12px;
       font-weight: 500;
-    color: rgb(85, 86, 86);
+      color: rgb(85, 86, 86);
     }
   }
 `;
 
 const EmailDiv = styled.div`
-width: 100%;
-height: 130px;
-margin-top: 20px;
-background: rgba(223, 221, 220, 0.724);
-border: 1px solid rgba(243, 119, 37, 0.724);
-`
+  width: 100%;
+  height: 115 px;
+  margin-top: 20px;
+  background: rgb(239, 233, 233);
+  border: 0.2px solid rgba(248, 154, 92, 0.724);
+  display: flex;
+  justify-content: space-between;
+  div {
+    // border:1px solid red;
+  }
+  div:nth-child(1) {
+    width: 15%;
+  }
+  div:nth-child(2) {
+    width: 53%;
+    h2 {
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 550;
+      color: rgb(109, 33, 156);
+    }
+    h3 {
+      margin-top: 9px;
+      font-size: 13px;
+      color: rgb(85, 86, 86);
+    }
+    h4 {
+      margin-top: 9px;
+      font-size: 13px;
+      color: black;
+    }
+  }
+  div:nth-child(3) {
+    width: 26%;
+    text-align: center;
+    button {
+      margin-top: 20px;
+      width: 130px;
+      height: 40px;
+      border-radius: 5px;
+      font-size: 12px;
+      color: white;
+      border: none;
+      background: rgb(0, 102, 238);
+    }
+    p {
+      color: rgb(0, 102, 238);
+      font-size: 12px;
+      margin: 10px;
+      text-align: center;
+    }
+  }
+`;
+const NewsDiv = styled.div`
+  width: 96%;
+  height: 35px;
+  background: rgb(109, 33, 156);
+  display: flex;
+  color: white;
+  margin-top: 20px;
+  justify-content: space-between;
+  p {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+`;
+const NewsBody = styled.div`
+  background: rgba(230, 233, 235, 0.724);
+  width: 96%;
+  height: 110px;
+  display: flex;
+  justify-content: space-around;
+  div:first-child {
+    width: 70%;
+    margin-top: 20px;
+    textarea {
+      width: 100%;
+      height: 50px;
+      border: 1px solid rgb(209, 208, 208);
+      border-radius: 4px;
+      padding-left: 5px;
+      font-size: 14px;
+      color: rgb(144, 144, 144);
+
+      &:focus {
+        outline: 2px solid rgb(0, 102, 238);
+        // box-shadow: 0px 0px 2px red;
+      }
+    }
+  }
+  div:last-child {
+    margin-top: 20px;
+    width: 20%;
+    button {
+      width: 80px;
+      height: 40px;
+      border-radius: 5px;
+      font-size: 12px;
+      color: white;
+      border: none;
+      background: rgb(0, 102, 238);
+    }
+  }
+`;
+const InviteDiv = styled.div`
+  width: 94%;
+  height: 150px;
+  margin-top: 20px;
+  text-align: center;
+  border: 0.5px solid rgb(209, 208, 208);
+  background: rgba(230, 233, 235, 0.724);
+  h1 {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  h2 {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(169, 169, 169);
+  }
+  div {
+    width: 190px;
+    height: 45px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 550;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+    border: 0.5px solid rgb(209, 208, 208);
+    p {
+      margin-left: 8px;
+      cursor: pointer;
+    }
+    &:hover {
+      background: rgb(147, 146, 146);
+    }
+  }
+`;
+
+const DownSUmmDiv = styled.div`
+  grid-area: 2/1/3/3;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  & > div:nth-child(1) {
+    // border: 1px solid pink;
+    & > div:first-child {
+      margin-left: 3px;
+      h1 {
+        margin-left: 2px;
+        font-size: 25px;
+        font-weight: 750;
+        color: rgba(6, 169, 169, 0.724);
+        span {
+          margin-left: 3px;
+          font-size: 14px;
+          font-weight: 550;
+          color: rgb(134, 133, 133);
+        }
+      }
+    }
+    & > div:last-child {
+      text-align: left;
+      & > span {
+        text-align: left;
+        font-weight: 550;
+        font-size: 14px;
+        color: rgb(134, 133, 133);
+        margin-left: 5px;
+      }
+    }
+  }
+  & > div:nth-child(2) {
+    margin-left: 6%;
+  }
+  & > div:nth-child(3) {
+    width: 73.6%;
+    margin-left: 4%;
+    p {
+      width: 85.3%;
+      height: 11px;
+      border: 1px solid rgb(187, 187, 187);
+      background: rgb(228, 227, 227);
+    }
+  }
+`;
+
+const RightDiv = styled.div`
+  width: 29%;
+`;
+const RightAdv = styled.div`
+  width: 100%;
+  img {
+    width: 100%;
+  }
+`;
+const Para1 = styled.div`
+  margin-top: 25px;
+  & > div:nth-child(1) {
+    margin-left: 12px;
+    & > p:nth-child(1) {
+      font-size: 14px;
+      font-weight: 550;
+      color: rgb(3, 152, 118);
+    }
+    & > p:nth-child(2) {
+      font-size: 13px;
+      margin-top: 9px;
+      margin-bottom: 9px;
+      color: rgb(55, 68, 252);
+    }
+  }
+  & > div:nth-child(3) {
+    margin-left: 25px;
+    font-size: 13px;
+    color: rgb(55, 68, 252);
+    li {
+      margin-top: 8px;
+    }
+  }
+`;
+const EmptyBox = styled.div`
+  width: 100%;
+  height: 200px;
+  background: rgb(216, 215, 215);
+  margin-top: 20px;
+  margin-bottom: 20px;
+`;
+
+const Para2 = styled.div`
+  margin-left: 12px;
+  p {
+    font-size: 13px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    color: rgb(55, 68, 252);
+    margin-bottom: 16px;
+  }
+`;
+const Para3 = styled.div`
+  margin-left: 12px;
+
+  h1 {
+    font-size: 12px;
+    color: rgb(5, 51, 238);
+    margin-top: 13px;
+  }
+  h2 {
+    font-size: 12px;
+    color: black;
+    font-weight: 100;
+    margin-top: 7px;
+  }
+  h3 {
+    font-size: 12px;
+    color: rgb(55, 68, 252);
+    font-weight: 100;
+    margin-top: 7px;
+  }
+`;
+
+const Adv2 = styled.div`
+  width: 75%;
+  height: 280px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+`;
 
 const MyHome = () => {
   const navigate = useNavigate();
+  const userpresent = localStorage.getItem('fitnesspal')
+
   return (
     <MainDiv>
       <AdvDiv>
@@ -231,15 +483,6 @@ const MyHome = () => {
             <LeftSummaryUP>
               <p>No photo provided</p>
               <span>Upload photo</span>
-              <DownSummaryUP>
-                  <div>
-                    <h1>0<span>kg</span></h1>
-                    <span>LOST</span>
-                  </div>
-                  <div>
-                    <BsFillBagCheckFill/>
-                  </div>
-              </DownSummaryUP>
             </LeftSummaryUP>
             <RightSummaryUP>
               <div>
@@ -284,26 +527,139 @@ const MyHome = () => {
                   <h5>NET</h5>
                 </div>
               </div>
-              <div>
-              <Progress hasStripe value={64} />
-              </div>
             </RightSummaryUP>
+            <DownSUmmDiv>
+              <div>
+                <div>
+                  <h1>
+                    0<span>kg</span>
+                  </h1>
+                </div>
+                <div>
+                  <span>LOST</span>
+                </div>
+              </div>
+              <div>
+                <BsFillBagCheckFill style={{ fontSize: "30px" }} />
+              {/* <Progress hasStripe value={64} /> */}
+              </div>
+              <div>
+                <p></p>
+              </div>
+            </DownSUmmDiv>
           </SummaryBodyUP>
           <EmailDiv>
             <div>
-              <h1>cnsjbdcjksan</h1>
+              <MdMail
+                style={{
+                  fontSize: "50px",
+                  marginTop: "20px",
+                  marginLeft: "40%",
+                }}
+              />
+            </div>
+            <div>
+              <h2>Don't forget to verify your email.</h2>
+              <h3>We sent an email to:</h3>
+              <h4>example@gmail.com</h4>
+            </div>
+            <div>
+              <button>RESEND EMAIL</button>
+              <p>Or, change your email address</p>
             </div>
           </EmailDiv>
+          <NewsDiv>
+            <p>News Feed</p>
+          </NewsDiv>
+          <NewsBody>
+            <div>
+              <textarea rows={2} cols="10">
+                What's on your mind?
+              </textarea>
+            </div>
+            <div>
+              <button>Share</button>
+            </div>
+          </NewsBody>
+          <InviteDiv>
+            <h1>Add Friends to help you reach your goals!</h1>
+            <h2>
+              Lose up to 3x more with the support of friends, than those who
+              diet alone.
+            </h2>
+            <div>
+              <MdMail style={{ fontSize: "22px", cursor: "pointer" }} />
+              <p>Invite By Email</p>
+            </div>
+          </InviteDiv>
         </LeftDiv>
         <RightDiv>
-          <div>
+          <RightAdv>
             <img
               src="https://images.adsttc.com/media/images/5b08/b87c/f197/ccb5/4900/00bd/medium_jpg/The_S_02_filter_edit2_06.jpg?1527298139"
               alt=""
             />
-          </div>
+          </RightAdv>
+          <Para1>
+            <div>
+              <p>Recent Forum Topics</p>
+              <p>View All</p>
+            </div>
+            <hr style={{ color: "rgba(248, 154, 92, 0.724)" }} />
+            <div>
+              <ul>
+                <li>Intermittent Fasting + Low Carb (not keto)</li>
+                <li>Things people say when you lose weight</li>
+                <li>What Mini Goal is motivating you right now!</li>
+                <li>Apron belly Success stories</li>
+                <li>Losing then Gaining then Losing again...</li>
+              </ul>
+            </div>
+          </Para1>
+          <EmptyBox></EmptyBox>
+          <Para2>
+            <div>
+              <img
+                src="https://d34yn14tavczy0.cloudfront.net/ember-cli/fe8debda5e8d/images/widgets/ic_hellohealthy.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <p>View All</p>
+            </div>
+          </Para2>
+          <hr style={{ color: "rgba(248, 154, 92, 0.724)" }} />
+          <Para3>
+            <div>
+              <h1>15 Great Foods For Gut Health</h1>
+              <h2>
+                A gut full of healthy bacteria may reduce your risk of
+                arthritis, depression, cardiovascular disease and cancer.
+              </h2>
+              <h3>Read More</h3>
+            </div>
+            <div>
+              <h1>5 Summer Desserts With Less Than 100 Calories</h1>
+              <h2>Satisfy your sweet tooth with these healthy desserts!</h2>
+              <h3>Read More</h3>
+            </div>
+            <div>
+              <h1>How to Make Your Own Almond Butter</h1>
+              <h2>
+                Believe it or not, delicious, nutritious and creamy almond
+                butter isn’t born in a jar.
+              </h2>
+              <h3>Read More</h3>
+            </div>
+          </Para3>
         </RightDiv>
       </BodyDiv>
+      <Adv2>
+        <img
+          src="https://petapixel.com/assets/uploads/2021/06/Social-Medias-Impact-on-Landscape-and-Nature-Photography.jpg"
+          alt=""
+        />
+      </Adv2>
     </MainDiv>
   );
 };
