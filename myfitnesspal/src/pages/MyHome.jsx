@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { BsFillBagCheckFill } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
-import { BsFillBagCheckFill } from 'react-icons/bs';
+// import { BsFillBagCheckFill } from 'react-icons/bs';
 
 const MainDiv = styled.div`
   width: 100%;
