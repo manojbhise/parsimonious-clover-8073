@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import { Progress } from "@chakra-ui/react";
+// import { Progress } from "@chakra-ui/react";
 import { BsFillBagCheckFill } from 'react-icons/bs';
 
 const MainDiv = styled.div`
@@ -211,6 +211,8 @@ border: 1px solid rgba(243, 119, 37, 0.724);
 
 const MyHome = () => {
   const navigate = useNavigate();
+  const userpresent = localStorage.getItem('fitnesspal')
+
   return (
     <MainDiv>
       <AdvDiv>
@@ -285,7 +287,7 @@ const MyHome = () => {
                 </div>
               </div>
               <div>
-              <Progress hasStripe value={64} />
+              {/* <Progress hasStripe value={64} /> */}
               </div>
             </RightSummaryUP>
           </SummaryBodyUP>
