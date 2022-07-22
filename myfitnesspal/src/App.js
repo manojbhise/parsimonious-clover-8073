@@ -27,13 +27,7 @@ function App() {
               <Route path="/goals" element={<Goals />} />
             </Route>
             <Route path="/food" element={<Food />} />
-            <Route path="/blog" element={
-            <>
-            <Blog_Nav/>
-            <BlogHomePage />
-            <Blog_Footer/>
-            </>
-            } />
+            <Route path="/blog" element={<BlogHomePage />} />
             <Route path="/exercise" element={<Mainroutes />} />
           </Routes>
 
