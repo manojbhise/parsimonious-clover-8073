@@ -19,8 +19,8 @@ align-items: center;
 background: rgb(0,102,238);
 gap: 20px;
 color: white;
-font-size: 15px;
-font-weight: 550;
+font-size: 14px;
+// font-weight: 550;
 `;
 
 const LowerDiv = styled.div`
@@ -32,12 +32,12 @@ box-sizing: border-box;
 background: rgb(2, 55, 124);
 gap: 20px;
 font-size: 14px;
-font-weight: 550;
+// font-weight: 550;
 `;
 
 const Header = () => {
     const [navLinks, setNavLinks] = useState("myHome");
-    console.log(navLinks)
+    // console.log(navLinks)
   return (
     <MainDiv>
         <UpperDiv>
@@ -47,7 +47,7 @@ const Header = () => {
             <Link style={{textDecoration:"none",color: navLinks==="reports"? "rgb(226, 38, 38)":"white"}} to="reports" onClick={()=>setNavLinks("reports")}>REPORTS</Link>
             <Link style={{textDecoration:"none",color: navLinks==="apps"? "rgb(226, 38, 38)":"white"}} to="apps" onClick={()=>setNavLinks("apps")}>APPS</Link>
             <Link style={{textDecoration:"none",color: navLinks==="community"? "rgb(226, 38, 38)":"white"}} to="community" onClick={()=>setNavLinks("community")}>COMMUNITY</Link>
-            <Link style={{textDecoration:"none",color: navLinks==="blog"? "rgb(226, 38, 38)":"white"}} to="blog" onClick={()=>setNavLinks("blog")}>BLOG</Link>
+            <Link style={{textDecoration:"none",color: navLinks==="blog"? "rgb(226, 38, 38)":"white"}} to="blog" onClick={()=>{}}>BLOG</Link>
             <Link style={{textDecoration:"none",color: navLinks==="premium"? "rgb(226, 38, 38)":"white"}} to="premium" onClick={()=>setNavLinks("premium")}>PREMIUM</Link>
         </UpperDiv>
         <LowerDiv style={{display: navLinks==="myHome"? "flex":"none"}}>
