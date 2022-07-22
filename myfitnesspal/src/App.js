@@ -30,6 +30,7 @@ function App() {
        {useravailable && <Afterheader />}
       {useravailable && <Header />}
 
+
       <Routes>
         <Route
           exact
@@ -45,16 +46,16 @@ function App() {
         <Route path="/food" element={<Food />} />
         <Route
           path="/blog"
-          element={
-            <>
-              <Blog_Nav />
-              <BlogHomePage />
-              <Blog_Footer />
-            </>
+          element={    
+              <BlogHomePage />     
+        
           }
         />
         <Route path="/exercise" element={<Mainroutes />} />
       </Routes>
+
+        
+
 
       <Footer />
     </div>
