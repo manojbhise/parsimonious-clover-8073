@@ -1,0 +1,308 @@
+.premium{
+    
+    min-height: 500px;
+width:1200px;
+
+}
+
+
+.main{width:1200px;
+    background-size: contain;
+   background-image: url("https://www.myfitnesspal.com/react-static/78a85ff61ae51bacb70e2839935c0b84.svg");;
+
+}
+
+.inner{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-size: 330px 548px;
+    background-image: url("https://www.myfitnesspal.com/react-static/d25745179dd7595c07dc1f9b09b89efa.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.innermost{
+    display:flex;
+}
+
+.first{
+    margin-left: 175px;
+}
+.first>div:first-child{
+    width: 376px;
+    height: 27px;
+    margin-bottom: 32px;
+}
+
+.firsthead{
+   
+    color: #222628;
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 0.875rem;
+    background: #FFC600;
+    font-weight: 600;
+    line-height: 1.4;
+    border-radius: 6.6px;
+    margin-bottom: 0;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+}
+
+.h1{width:376px;
+    height: 150px;
+    color: #222628;
+    white-space: pre-wrap;
+    
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom:32px ;
+}
+
+.p1{width:376px;
+    height: 48px;
+    font-size: 1rem;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.button{
+    width:334px;
+    height: 60px;
+  
+    background-color:#0066EE;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.but{
+    width:292px;
+    height: 28px;
+margin-top: 10px;
+color: #FFF;
+    background-color:#0066EE;
+    font-size: 20px;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 700;
+}
+
+.second{
+    margin-left: 103px;
+    width:411px;
+    height: 494px;
+}
+.second>img{
+    width: 411px; 
+    height:454px
+}
+
+.middle{
+    margin: 0px auto 32px;
+    max-width: 968px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+}
+.middle1{
+    margin-top: 50px;
+    width:310px;
+    height: 224px;
+  
+
+}
+.middle1>img{
+    width:160px;
+    height: 160px; 
+    margin: auto;
+}
+.middle1>h3{
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+}
+.middle1>p{
+    text-align: center;
+    margin-top: 5px;
+color:#80768a ;
+}
+
+.multiContainer{
+    padding: 8px 0px 48px;
+    overflow: hidden;
+    max-width: 1366px;
+    background-size: auto;
+    background-image: url("https://www.myfitnesspal.com/react-static/0e3daba96c7f16b61bd848c187c939ae.png"),
+     url("https://www.myfitnesspal.com/react-static/c07e47cc8b53532097af736f71cc339d.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 30px left, bottom right;
+height: 1141px;
+
+}
+
+.multiContainer>div:first-child{
+    margin: 0 auto;
+    max-width: 800px;
+    position: relative;
+}
+
+.header{
+    height: 100%;
+    padding: 32px 16px 32px;
+    background: none;
+    text-align: center;
+    background-image: none
+
+
+}
+.header>h2{
+font-size: 25px;
+   font-weight: 700;
+    line-height: 1.12;
+    color: #212121;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+
+
+}
+
+.header>p{
+    color: #6D717A;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.head1{
+
+    position: relative;
+}
+
+.head2{
+    top: 38px;
+    min-width: 800px;
+}
+
+.head3>div:first-child{
+width:521px;
+height: 37px;
+padding-bottom: 12px;
+}
+
+.Free{
+    width:130px;
+    height: 37px;
+    padding-bottom: 12px;
+    font-weight: 700;
+}
+
+.premium{
+    width:147px;
+    height: 37px;
+    padding-bottom: 12px;
+    font-weight: 700;
+}
+.head3{
+    display: flex;
+}
+.Tables{
+    width:800px;
+    height: 997px;
+   
+   
+    border-top: 2px solid #FFC600;
+    background-color: white;
+}
+.Tablesbody{
+    display: flex;
+    border-bottom: 2px solid#f2f2f2;
+    background-color: white;
+}
+.Tablesbody1{
+    display: flex;
+    border-bottom: 1px solid#f2f2f2;
+    background-color:#fafafa
+}
+.Tablesbody1>div{
+    padding-left: 48px;
+}
+
+.Tablesbody>div{
+  
+    padding-left: 48px;
+}
+.Tablesbodyparticular>h3{
+    margin-top:15px ;
+    font-size: 16px;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.Tablesbodyparticular>p{
+    margin-top:5px ;
+    color: #6D717A;
+    font-size: 1rem;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+.Tablesbodyparticular{
+width:520px;
+height: 97px;
+
+
+}
+.Tick{
+    width:130px;
+height: 97px;
+
+
+}
+.Tick1{
+    background: 35px 35px;
+    background-color: #0066EE;
+    font-size: 20px;
+    border-radius: 50%;
+    color: white;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.sliderhead{
+    width: 980px;
+    margin: 64px auto 80px;
+
+}
+
+.sliderhead1{
+    margin-bottom: 32px;
+height: 76px;
+
+border:1px solid red;
+text-align: center;
+}
+.sliderh2{
+    font-weight: 700;
+    line-height: 1.12;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sliderh2+p{
+    color: #6D717A;
+    font-size: 1rem;
+    font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
+    font-weight: 400;
+}
+
+.Sliders{
+width:980px;
+height: 377px;
+margin: auto;
+border:1px solid red;
+}
+
+

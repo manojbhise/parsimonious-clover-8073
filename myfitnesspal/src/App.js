@@ -12,9 +12,16 @@ import BlogHomePage from "./pages/BlogHomePage";
 import Mainroutes from "./pages/exercise/Mainroutes";
 import Blog_Nav from "./components/Blog_Nav";
 import Blog_Footer from "./components/Blog_Footer";
+
+
+
+
+    
 import { Login } from "./components/Login";
 import { Signup } from "./components/Signup";
 import { Afterheader } from "./components/Afterheader";
+import MainPage from "./pages/exercise/MainPage";
+import Premium from "./pages/premium/premium";
 
 function App() {
   const navigate = useNavigate()
@@ -54,6 +61,8 @@ function App() {
           }
         />
         <Route path="/exercise" element={<Mainroutes />} />
+          {/* < Route path="/apps" element={<MainPage/>}/> */}
+            <Route path="/premium" element={<Premium />} /> 
       </Routes>
 
         
