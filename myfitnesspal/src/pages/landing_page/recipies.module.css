@@ -1,0 +1,62 @@
+.rcphp{
+    width: 55%;
+    text-align: center;
+    margin: auto;
+}
+.rcphp>h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.rcphp>p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.rcpgrd{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+   
+}
+.rcpgrd img{
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.rcptt{
+    padding: 0px 25px 10px 15px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.rcptt>p{
+    color: rgb(0,102,238);
+    font-weight: 600;
+    margin-top: 30px;
+}
+.grdcon{
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.grdcon:hover{
+    cursor: pointer;
+}
+.rcpmain{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+@media all and (min-width:391px) and (max-width:800px){
+    .rcpgrd{
+       
+        grid-template-columns: repeat(1,1fr);
+       
+       
+    }
+
+}

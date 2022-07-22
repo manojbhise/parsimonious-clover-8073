@@ -1,6 +1,8 @@
 import React from 'react'
 import Slider from './Slider';
 import ToolForGoal from './ToolForGoal';
+import Recipies from "./Recipies"
+import LandingApps from "./LandingApps"
 import style from "./landbody.module.css";
 import Search from './Search';
 import { Link } from 'react-router-dom';
@@ -19,6 +21,8 @@ const LandBody = () => {
         <Search/>
         <ToolForGoal/>
         <Slider/>
+        <Recipies/>
+        <LandingApps/>
     </div>
   )
 }
