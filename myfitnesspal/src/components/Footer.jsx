@@ -19,6 +19,9 @@ const TopDiv = styled.div`
     color: blue;
     margin-right: 12px;
   }
+  select{
+    border: 1px solid black;
+  }
 `;
 const BottomDiv = styled.div`
   height: 50px;

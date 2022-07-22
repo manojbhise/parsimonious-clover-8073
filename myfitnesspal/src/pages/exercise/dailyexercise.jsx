@@ -5,6 +5,7 @@ import Styles from "../../styling/dailyexercise.module.css";
 import Strength from "./Strength";
 import Tablecomp from "./tablecomp";
 import Todayexercise from "./Todayexercise";
+import Header from "../../components/Header";
 import {BsCalendar2Month} from 'react-icons/bs';
 import {GrCaretPrevious} from 'react-icons/gr';
 import {GrCaretNext} from 'react-icons/gr';

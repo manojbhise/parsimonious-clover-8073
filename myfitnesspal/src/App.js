@@ -27,6 +27,26 @@ function App() {
   }
   return (
     <div className="App">
+
+      {isLoggedIn ? (
+        <div>
+          <Header />
+
+          <Routes>
+            <Route path="/" element={<MyHome />}>
+              <Route path="/" element={<MyHome />} />
+              <Route path="/goals" element={<Goals />} />
+            </Route>
+            <Route path="/food" element={<Food />} />
+            <Route path="/exercise" element={<Mainroutes />} />
+            <Route path="/blog" element={<><Blog_Nav /><BlogHomePage /><Blog_Footer /></>}/>
+          </Routes>
+
+          <Footer />
+        </div>
+      ) : (
+        <LandingHeader />
+      )}
        {useravailable && <Afterheader />}
       {useravailable && <Header />}
 
