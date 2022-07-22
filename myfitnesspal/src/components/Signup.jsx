@@ -7,9 +7,11 @@ import Typography from "@mui/material/Typography";
 import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
 import styles from "../styling/Login.module.css"
+import style from "../pages/landing_page/header.module.css";
 import { useState } from 'react';
 import axios from 'axios'
 import {useNavigate} from "react-router-dom"
+import LandingNavbar from '../pages/landing_page/LandingNavbar';
 
 export const Signup = () => {
   const [name,setname] = useState("")
@@ -19,6 +21,7 @@ export const Signup = () => {
   const [gender,setgender]= useState("")
   const [e,sete] = useState(true)
   const [open, setOpen] = React.useState(false);
+  const [isflag, setisflag] = useState(false)
  const navigate = useNavigate()
 
   const handleClose = (event, reason) => {
@@ -28,7 +31,12 @@ export const Signup = () => {
 
     setOpen(false);
   };
-
+  let changeflagtotrue=()=>{
+    setisflag(true)
+  }
+  let changeflagtofalse=()=>{
+      setisflag(false)
+  }
   const handleSubmit = ()=>{
     let payload = {
         name,
@@ -54,6 +62,19 @@ export const Signup = () => {
 
   return (
     <div>
+        <div className={isflag?style.blur:""}>
+        <div className={style.headcar}>
+            <i className="fa-solid fa-bars" onClick={changeflagtotrue}></i>
+            <img src="https://i.pinimg.com/originals/53/24/0a/53240a99b0159c5a16937e5ac479f78a.png" alt="" />
+            <h2>myfitnesspal</h2>
+            <div className={style.lscar}>
+                <Link to="/login" className={style.headlog}>Log In</Link>
+                <Link to="/signup">Sign Up</Link>
+            </div>
+        </div>
+        <LandingNavbar/>
+        
+    </div>
            <div style={{width:"100%",backgroundColor:"white"}}>
          <br/>
          {e ? null : <Alert severity="error">This is an error alert — Required All Credentials !</Alert>}

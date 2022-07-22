@@ -13,6 +13,7 @@ import {useNavigate} from "react-router-dom"
 import LandingNavbar from '../pages/landing_page/LandingNavbar';
 import LandBody from '../pages/landing_page/LandBody';
 
+
 export const Login = () => {
     const [email,setemail] = useState("");
     const [password,setpassword] = useState("")

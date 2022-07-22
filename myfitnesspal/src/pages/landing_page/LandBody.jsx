@@ -12,7 +12,7 @@ const LandBody = () => {
             <div className={style.lbp1t}>
                 <h1>Fitness starts with what you eat.</h1>
                 <p>Take control of your goals. Track calories, break down ingredients, and log activities with MyFitnessPal.</p>
-                <Link to=""><button className={style.lbp1btn}>START FOR FREE</button></Link>
+                <Link to="/"><button className={style.lbp1btn}>START FOR FREE</button></Link>
                 <p>Already have an Account? <Link to="/login"  className={style.lbp1spn}>Login</Link></p>
             </div>
         </div>
