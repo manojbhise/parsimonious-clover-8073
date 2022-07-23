@@ -34,7 +34,7 @@ const LandingHeader = () => {
         <LandBody/>
         
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
   )
 }
