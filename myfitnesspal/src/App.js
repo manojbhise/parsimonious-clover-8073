@@ -22,6 +22,7 @@ import { Signup } from "./components/Signup";
 import { Afterheader } from "./components/Afterheader";
 import MainPage from "./pages/exercise/MainPage";
 import Premium from "./pages/premium/premium";
+import Recipies from "./pages/landing_page/Recipies";
 
 function App() {
   const navigate = useNavigate();
@@ -50,6 +51,7 @@ function App() {
 
         <Route path="/food" element={<Food />} />
         <Route path="/blog" element={<BlogHomePage />} />
+        <Route path="/recipes" element={<Recipies />} />
         <Route path="/exercise" element={<Mainroutes />} />
           {/* < Route path="/apps" element={<MainPage/>}/> */}
             <Route path="/premium" element={<Premium />} /> 
