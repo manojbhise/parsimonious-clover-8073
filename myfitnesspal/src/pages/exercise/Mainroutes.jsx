@@ -6,6 +6,7 @@ const Mainroutes = () => {
   return (
     <div>
       <Dailyexercise />
+    
     </div>
   );
 };

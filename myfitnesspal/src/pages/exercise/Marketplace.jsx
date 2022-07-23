@@ -17,8 +17,8 @@ const Marketplace = () => {
               <img  className={Styles.logo}src={elem.img} alt={"icon"} />
             </div>
            <div className={Styles.right}>
-              <p>{elem.p1}</p>
-       <p >{elem.Category}</p>
+              <p className={Styles.rightpara1}>{elem.p1}</p>
+       <p className={Styles.rightpara2}>{elem.Category}</p>
               <a
                 href="http://www.myfitnesspal.com/fitbit/authorize"
                 rel="noreferrer"
