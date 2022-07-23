@@ -4,7 +4,7 @@
     align-items: center;
     padding: 20px 15%;
 }
-.headcar>img{
+.headcar img{
     width: 200px;
     height: 30px;
 }
@@ -52,7 +52,7 @@
         font-size: 25px;
         color:white;
     }
-    .headcar>img{
+    .headcar img{
         display: none;
     }
     .headcar>h2{
