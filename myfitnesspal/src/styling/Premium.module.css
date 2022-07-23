@@ -1,7 +1,8 @@
 .premium{
     
-    min-height: 500px;
-width:1200px;
+    height:auto;
+width:100%;
+margin-bottom: 2700px;
 
 }
 
@@ -49,12 +50,12 @@ width:1200px;
     text-transform: uppercase;
 }
 
-.h1{width:376px;
+.htrial{width:376px;
     height: 150px;
     color: #222628;
     white-space: pre-wrap;
-    
-    font-size: 50px;
+   
+    font-size: 45px;
     font-weight: 800;
     margin-bottom:32px ;
 }
@@ -78,6 +79,9 @@ width:1200px;
     width:292px;
     height: 28px;
 margin-top: 10px;
+margin-left: 2px;
+outline: none;
+border: none;
 color: #FFF;
     background-color:#0066EE;
     font-size: 20px;
@@ -107,13 +111,15 @@ color: #FFF;
     margin-top: 50px;
     width:310px;
     height: 224px;
-  
+ 
 
 }
-.middle1>img{
+.middleimg{
+  
     width:160px;
     height: 160px; 
     margin: auto;
+    margin-left: 70px;
 }
 .middle1>h3{
     font-family: "Neue Plak UA", Helvetica, Arial, -apple-system, sans-serif;
@@ -281,7 +287,7 @@ height: 97px;
     margin-bottom: 32px;
 height: 76px;
 
-border:1px solid red;
+
 text-align: center;
 }
 .sliderh2{
@@ -299,10 +305,36 @@ text-align: center;
 }
 
 .Sliders{
-width:980px;
+width:1000px;
 height: 377px;
 margin: auto;
+
+
+}
+
+.faq{
+width:752px;
+height:83px;
+margin: auto;
 border:1px solid red;
+margin-top: 50px;
+
+}
+
+.firsthead1{
+    color: #222628;
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 0.875rem;
+    background: #FFC600;
+    font-weight: 600;
+    line-height: 1.4;
+    border-radius: 6.6px;
+    margin-bottom: 0;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    text-align: center;
+
 }
 
 

@@ -43,27 +43,29 @@
       
         
     }
-    .right>p:first-child{
-    margin-top: -5px;
+    .rightpara1{
+
     margin-left: 10px;
     font-size: 15px;
-    color:#2584c9
+    color:#2584c9;
+    margin-bottom: 15px;
     }
-    .right>p:first-child:hover{
+    .rightpara1:hover{
         color:yellow;
     }
-    p+p{
-        margin-top: -5px;
+    .rightpara2{
+       
     margin-left: 10px;
     font-size: 15px;
-    color:grey
+    color:grey;
+    margin-bottom: 10px;
     }
     .hidden{
         display: none;
     }
     
     .button{
-        margin-top: -5px;
+      
         width:100px;
         margin-left: 15px;
         display: inline-block;
@@ -76,7 +78,7 @@
         text-transform: capitalize;
         background-color: #ebebeb;
         background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.26, #fbfbfb), color-stop(0.75, #ebebeb));
-    
+      
     }
     
     

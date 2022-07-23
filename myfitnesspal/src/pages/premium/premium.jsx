@@ -3,6 +3,7 @@ import Styles from "../../styling/Premium.module.css";
 import { TiTick } from "react-icons/ti";
 import Tablepremium from "./Tablepremium";
 import Middlepre from "./Middlepre";
+import Victory from "./Victory";
 const Premium = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const Premium = () => {
                   <div className={Styles.firsthead}>Premium</div>
                 </div>
                 <div>
-                  <h1 className={Styles.h1}>Start Your Free Trial Today</h1>
+                  <h1 className={Styles.htrial}>Start Your Free Trial Today</h1>
                 </div>
                 <div>
                   <p className={Styles.p1}>
@@ -39,7 +40,7 @@ const Premium = () => {
               </div>
             </div>
             <div className={Styles.middle}>
-              <Middlepre/>
+              <Middlepre />
             </div>
             <div className={Styles.multiContainer}>
               <div>
@@ -58,7 +59,7 @@ const Premium = () => {
                     <div className={Styles.Premium}>Premium</div>
                   </div>
                   <div className={Styles.Tables}>
-                  <Tablepremium/>
+                    <Tablepremium />
                   </div>
                 </div>
               </div>
@@ -74,8 +75,13 @@ const Premium = () => {
               </div>
             </div>
             <div className={Styles.Sliders}>
-
+              <Victory />
             </div>
+            {/* <div className={Styles.faq}>
+              <div>
+                <div className={Styles.firsthead1}>Premium</div>
+              </div>
+            </div> */}
           </div>
         </div>
       </div>

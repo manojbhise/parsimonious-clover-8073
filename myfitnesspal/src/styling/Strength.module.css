@@ -29,7 +29,7 @@ display: flex;
     color:white;
     font-size: 15px;
     padding-top: 5px;
-
+margin-top: 1px;
    
 }
 .p{
@@ -41,6 +41,7 @@ display: flex;
     font-size: 15px;
     padding-top: 5px;
 margin-left:1px;
+margin-top: 1px;
    
 }
 .Second{
@@ -55,19 +56,22 @@ margin-left:1px;
   padding: 0 10px;
   color:#2584c9;
   font-weight: 500;
+  margin-top: 1px;
 }
 .para1{
     padding: 0 5px; 
-    color:#2584c9
+    color:#2584c9;
+    margin-top: 1px;
 }
 
 .para{
     padding: 0 5px;
-    color:#2584c9
-   
+    color:#2584c9;
+    margin-top: 1px;
   }
   .diva{
     width:760px;
+    margin-top: 1px;
     border-bottom: 1px solid #e6e6e6;
     margin-bottom: 20px;
   }

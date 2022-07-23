@@ -11,11 +11,11 @@ justify-content: space-between;
 align-items: center;
 
 }
-.side{
-    
+.sidecardio{
+   
 display: flex;
 }
-.side>p:first-child{
+.minutes{
     width:176px;
     height:31px;
     background-color: #00548f ;
@@ -23,10 +23,10 @@ display: flex;
     color:white;
     font-size: 15px;
     padding-top: 5px;
-
+margin-top: 1px;
    
 }
-.p{
+.burn{
     width:176px;
     height:31px;
     background-color: #00548f ;
@@ -34,6 +34,7 @@ display: flex;
     color:white;
     font-size: 15px;
     padding-top: 5px;
+   margin-top: 1px;
 margin-left:1px;
    
 }
@@ -42,30 +43,33 @@ margin-left:1px;
     font-weight: 700;
     font-size: 18px;
 }
-.Second{
+.Secondpara{
     width:366px;
     height:47px; 
 
 }
-.Second>div{
+.Secondpara>div{
     display:flex;
 }
-.Second>div:first-child{
+.Secondpara>div:first-child{
   padding: 0 10px;
   color:#2584c9;
   font-weight: 500;
 }
 .para1{
     padding: 0 5px; 
-    color:#2584c9
+    color:#2584c9;
+    margin-top: 1px;
 }
 
 .para{
     padding: 0 5px;
-    color:#2584c9
+    color:#2584c9;
+    margin-top: 1px;
    
   }
   .diva{
+    margin-top: 1px;
     width:760px;
     border-bottom: 1px solid #e6e6e6;
   }
