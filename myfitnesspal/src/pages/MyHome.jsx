@@ -31,7 +31,7 @@ const LeftDiv = styled.div`
 const SummaryDiv = styled.div`
   width: 96%;
   height: 35px;
-  background: rgb(109, 33, 156);
+  background: #0A5282;
   display: flex;
   color: white;
   justify-content: space-between;
@@ -62,13 +62,13 @@ const Div2 = styled.div`
 
 const SummaryBodyUP = styled.div`
   width: 96%;
-  height: 219px;
+  height: 210px;
   // margin-top: 18px;
   display: grid;
   grid-template-columns: 23% 72%;
   grid-template-rows: 140px 55px;
   gap: 10px;
-  background: rgba(230, 233, 235, 0.724);
+  background: #f6f6f6;
   justify-content: space-between;
   // margin-left: 18px;
 `;
@@ -78,13 +78,14 @@ const LeftSummaryUP = styled.div`
   margin: 0;
   margin-top: 15px;
   margin-left: 15px;
-  background: rgb(215, 213, 213);
+  background: #E6E6E6;
   box-sizing: border-box;
 
   p {
     margin: 0;
     padding-top: 10px;
     font-size: 11px;
+    color: #9999AD;
     text-align: center;
   }
   span {
@@ -113,7 +114,7 @@ const RightSummaryUP = styled.div`
   div:nth-child(1) > p:last-child {
     font-size: 33px;
     font-weight: 750;
-    color: rgba(6, 169, 169, 0.724);
+    color: #85C400;
   }
   div:nth-child(2) {
     display: flex;
@@ -125,6 +126,7 @@ const RightSummaryUP = styled.div`
       margin-top: 24px;
       padding-left: 5px;
       border-radius: 5px;
+      cursor: pointer;
       border: 1px solid rgb(158, 157, 157);
     }
     input:last-child {
@@ -180,8 +182,8 @@ const EmailDiv = styled.div`
   width: 100%;
   height: 115 px;
   margin-top: 20px;
-  background: rgb(239, 233, 233);
-  border: 0.2px solid rgba(248, 154, 92, 0.724);
+  background: #FFFCF8 ;
+  border: 0.2px solid #FCDAB0;
   display: flex;
   justify-content: space-between;
   div {
@@ -233,18 +235,18 @@ const EmailDiv = styled.div`
 const NewsDiv = styled.div`
   width: 96%;
   height: 35px;
-  background: rgb(109, 33, 156);
+  background: #0A5282;
   display: flex;
   color: white;
   margin-top: 20px;
   justify-content: space-between;
   p {
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 10px;
   }
 `;
 const NewsBody = styled.div`
-  background: rgba(230, 233, 235, 0.724);
+  background: #F6F6F6;
   width: 96%;
   height: 110px;
   display: flex;
@@ -258,6 +260,7 @@ const NewsBody = styled.div`
       border: 1px solid rgb(209, 208, 208);
       border-radius: 4px;
       padding-left: 5px;
+      padding-top: 3px;
       font-size: 14px;
       color: rgb(144, 144, 144);
 
@@ -337,12 +340,12 @@ const DownSUmmDiv = styled.div`
         margin-left: 2px;
         font-size: 25px;
         font-weight: 750;
-        color: rgba(6, 169, 169, 0.724);
+        color: #85C400;
         span {
           margin-left: 3px;
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 550;
-          color: rgb(134, 133, 133);
+          color: #A59999;
         }
       }
     }
@@ -350,10 +353,11 @@ const DownSUmmDiv = styled.div`
       text-align: left;
       & > span {
         text-align: left;
-        font-weight: 550;
-        font-size: 14px;
-        color: rgb(134, 133, 133);
+        // color: #A59999;
         margin-left: 5px;
+        font-size: 12px;
+        font-weight: 500;
+        color: rgb(85, 86, 86);
       }
     }
   }
@@ -366,8 +370,8 @@ const DownSUmmDiv = styled.div`
     p {
       width: 85.3%;
       height: 11px;
-      border: 1px solid rgb(187, 187, 187);
-      background: rgb(228, 227, 227);
+      border: 1px solid #CDCDCD;
+      background: #E6E6E6;
     }
   }
 `;
@@ -388,19 +392,19 @@ const Para1 = styled.div`
     & > p:nth-child(1) {
       font-size: 14px;
       font-weight: 550;
-      color: rgb(3, 152, 118);
+      color: #0A5282;
     }
     & > p:nth-child(2) {
       font-size: 13px;
       margin-top: 9px;
       margin-bottom: 9px;
-      color: rgb(55, 68, 252);
+      color: #0066F0;
     }
   }
   & > div:nth-child(3) {
     margin-left: 25px;
     font-size: 13px;
-    color: rgb(55, 68, 252);
+    color: #0066F0;
     li {
       margin-top: 8px;
     }
@@ -409,7 +413,7 @@ const Para1 = styled.div`
 const EmptyBox = styled.div`
   width: 100%;
   height: 200px;
-  background: rgb(216, 215, 215);
+  background: #E0E0E0;
   margin-top: 20px;
   margin-bottom: 20px;
 `;
@@ -420,7 +424,7 @@ const Para2 = styled.div`
     font-size: 13px;
     margin-top: 9px;
     margin-bottom: 9px;
-    color: rgb(55, 68, 252);
+    color: #0066F0;
     margin-bottom: 16px;
   }
 `;
@@ -429,7 +433,7 @@ const Para3 = styled.div`
 
   h1 {
     font-size: 12px;
-    color: rgb(5, 51, 238);
+    color: #0066EE;
     margin-top: 13px;
   }
   h2 {
@@ -440,7 +444,7 @@ const Para3 = styled.div`
   }
   h3 {
     font-size: 12px;
-    color: rgb(55, 68, 252);
+    color: #007EF2;
     font-weight: 100;
     margin-top: 7px;
   }
@@ -605,7 +609,7 @@ const MyHome = () => {
               <p>Recent Forum Topics</p>
               <p>View All</p>
             </div>
-            <hr style={{ color: "rgba(248, 154, 92, 0.724)" }} />
+            <hr style={{ color: "#F0F0F0" }} />
             <div>
               <ul>
                 <li>Intermittent Fasting + Low Carb (not keto)</li>

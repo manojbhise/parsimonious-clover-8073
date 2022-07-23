@@ -24,21 +24,18 @@ import MainPage from "./pages/exercise/MainPage";
 import Premium from "./pages/premium/premium";
 
 function App() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
- 
+
   const useravailable = localStorage.getItem("fitnesspal");
   // {useravailable ? setIsLoggedIn(true) : setIsLoggedIn(false)}
-  const handlelogout = ()=>{
-   navigate("/login")
-  }
+  const handlelogout = () => {
+    navigate("/login");
+  };
   return (
     <div className="App">
-
-      
-       {useravailable && <Afterheader />}
+      {useravailable && <Afterheader />}
       {useravailable && <Header />}
-
 
       <Routes>
         <Route
@@ -49,24 +46,14 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/afterheader" element={<Afterheader/>} />
-        <Route path="/goals" element={<Goals />} />
+        <Route path="/afterheader" element={<Afterheader />} />
 
         <Route path="/food" element={<Food />} />
-        <Route
-          path="/blog"
-          element={    
-              <BlogHomePage />     
-        
-          }
-        />
+        <Route path="/blog" element={<BlogHomePage />} />
         <Route path="/exercise" element={<Mainroutes />} />
           {/* < Route path="/apps" element={<MainPage/>}/> */}
             <Route path="/premium" element={<Premium />} /> 
       </Routes>
-
-        
-
 
       <Footer />
     </div>
