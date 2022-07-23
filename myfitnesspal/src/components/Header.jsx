@@ -90,7 +90,7 @@ const Header = () => {
             <NavLink to="steps" style={{textDecoration:"none",color:"white"}}>Steps</NavLink>
         </LowerDiv>
         <LowerDiv style={{display: navLinks==="blog"? "flex":"none"}}>
-            <NavLink to="RECEIPES" style={{textDecoration:"none",color:"white"}}>Receipes</NavLink>
+            <NavLink to="recipes" style={{textDecoration:"none",color:"white"}}>Recipes</NavLink>
             <NavLink to="nutrition" style={{textDecoration:"none",color:"white"}}>Nutrition</NavLink>
             <NavLink to="weight-loss" style={{textDecoration:"none",color:"white"}}>Weight Loss</NavLink>
             <NavLink to="fitness" style={{textDecoration:"none",color:"white"}}>Fitness</NavLink>
