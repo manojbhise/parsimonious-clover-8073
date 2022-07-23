@@ -49,7 +49,7 @@ const Header = () => {
             <Link style={{textDecoration:"none",color: navLinks==="reports"? "black":"white"}} to="reports" onClick={()=>setNavLinks("reports")}>REPORTS</Link>
             <Link style={{textDecoration:"none",color: navLinks==="apps"? "black":"white"}} to="apps" onClick={()=>setNavLinks("apps")}>APPS</Link>
             <Link style={{textDecoration:"none",color: navLinks==="community"? "black":"white"}} to="community" onClick={()=>setNavLinks("community")}>COMMUNITY</Link>
-            <Link style={{textDecoration:"none",color: navLinks==="blog"? "black":"white"}} to="blog" onClick={()=>{}}>BLOG</Link>
+            <Link style={{textDecoration:"none",color: navLinks==="blog"? "black":"white"}} to="blog" onClick={()=>setNavLinks("blog")}>BLOG</Link>
             <Link style={{textDecoration:"none",color: navLinks==="premium"? "black":"white"}} to="premium" onClick={()=>setNavLinks("premium")}>PREMIUM</Link>
         </UpperDiv>
         <LowerDiv style={{display: navLinks==="myHome"? "flex":"none"}}>
@@ -90,13 +90,13 @@ const Header = () => {
             <NavLink to="steps" style={{textDecoration:"none",color:"white"}}>Steps</NavLink>
         </LowerDiv>
         <LowerDiv style={{display: navLinks==="blog"? "flex":"none"}}>
-            <NavLink to="RECEIPES" style={{textDecoration:"none",color:"white"}}>RECEIPES</NavLink>
-            <NavLink to="nutrition" style={{textDecoration:"none",color:"white"}}>NUTRITION</NavLink>
-            <NavLink to="weight-loss" style={{textDecoration:"none",color:"white"}}>WEIGHT LOSS</NavLink>
-            <NavLink to="fitness" style={{textDecoration:"none",color:"white"}}>FITNESS</NavLink>
-            <NavLink to="inspiration" style={{textDecoration:"none",color:"white"}}>INSPIRATION</NavLink>
-            <NavLink to="essentials" style={{textDecoration:"none",color:"white"}}>ESSENTIALS</NavLink>
-            <NavLink to="video" style={{textDecoration:"none",color:"white"}}>VIDEO</NavLink>
+            <NavLink to="RECEIPES" style={{textDecoration:"none",color:"white"}}>Receipes</NavLink>
+            <NavLink to="nutrition" style={{textDecoration:"none",color:"white"}}>Nutrition</NavLink>
+            <NavLink to="weight-loss" style={{textDecoration:"none",color:"white"}}>Weight Loss</NavLink>
+            <NavLink to="fitness" style={{textDecoration:"none",color:"white"}}>Fitness</NavLink>
+            <NavLink to="inspiration" style={{textDecoration:"none",color:"white"}}>Inspiration</NavLink>
+            <NavLink to="essentials" style={{textDecoration:"none",color:"white"}}>Essentials</NavLink>
+            <NavLink to="video" style={{textDecoration:"none",color:"white"}}>Video</NavLink>
         </LowerDiv>
         <LowerDiv style={{display: navLinks==="premium"? "none":"none"}}></LowerDiv>
     </MainDiv>
