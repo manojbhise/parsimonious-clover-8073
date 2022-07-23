@@ -5,7 +5,7 @@ const MainDiv = styled.div`
   height: 110px;
   width: 100%;
   margin-top: 20px;
-  background: rgb(243, 239, 239);
+  background: #F6F6F8;
 `;
 const TopDiv = styled.div`
   height: 60px;
@@ -16,7 +16,7 @@ const TopDiv = styled.div`
   a {
     text-decoration: none;
     font-size: 14px;
-    color: blue;
+    color: #0066EE;
     margin-right: 12px;
   }
   select{
@@ -57,7 +57,7 @@ const Footer = () => {
         </select>
       </TopDiv>
       <BottomDiv>
-        <p>&#169;2022 MyFitnessPal, Inc.</p>
+        <p>&#169; 2022 MyFitnessPal, Inc.</p>
       </BottomDiv>
     </MainDiv>
   );

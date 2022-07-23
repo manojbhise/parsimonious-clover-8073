@@ -17,21 +17,18 @@ import { Signup } from "./components/Signup";
 import { Afterheader } from "./components/Afterheader";
 
 function App() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
- 
+
   const useravailable = localStorage.getItem("fitnesspal");
   // {useravailable ? setIsLoggedIn(true) : setIsLoggedIn(false)}
-  const handlelogout = ()=>{
-   navigate("/login")
-  }
+  const handlelogout = () => {
+    navigate("/login");
+  };
   return (
     <div className="App">
-
-      
-       {useravailable && <Afterheader />}
+      {useravailable && <Afterheader />}
       {useravailable && <Header />}
-
 
       <Routes>
         <Route
@@ -42,22 +39,13 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/afterheader" element={<Afterheader/>} />
+        <Route path="/afterheader" element={<Afterheader />} />
         <Route path="/goals" element={<Goals />} />
 
         <Route path="/food" element={<Food />} />
-        <Route
-          path="/blog"
-          element={    
-              <BlogHomePage />     
-        
-          }
-        />
+        <Route path="/blog" element={<BlogHomePage />} />
         <Route path="/exercise" element={<Mainroutes />} />
       </Routes>
-
-        
-
 
       <Footer />
     </div>
