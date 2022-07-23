@@ -4,7 +4,7 @@ import styled from "styled-components";
 const MainDiv = styled.div`
   height: 110px;
   width: 100%;
-  margin-top: 200px;
+  margin-top: 50px;
   background: #F6F6F8;
   padding-bottom: 0px;
 `;
