@@ -10,8 +10,9 @@ import styles from "../styling/Login.module.css"
 import style from "../pages/landing_page/header.module.css";
 import { useState } from 'react';
 import axios from 'axios'
-import {useNavigate} from "react-router-dom"
 import LandingNavbar from '../pages/landing_page/LandingNavbar';
+import Drawer from '../pages/landing_page/Drawer';
+import {NavLink, useNavigate} from "react-router-dom"
 
 export const Signup = () => {
   const [name,setname] = useState("")
@@ -62,14 +63,15 @@ export const Signup = () => {
 
   return (
     <div>
-        <div className={isflag?style.blur:""}>
+         {isflag?<Drawer changeflagtofalse={changeflagtofalse}/>:""}
+    <div className={isflag?style.blur:""}>
         <div className={style.headcar}>
             <i className="fa-solid fa-bars" onClick={changeflagtotrue}></i>
-            <img src="https://i.pinimg.com/originals/53/24/0a/53240a99b0159c5a16937e5ac479f78a.png" alt="" />
+           <NavLink to="/"><img src="https://i.pinimg.com/originals/53/24/0a/53240a99b0159c5a16937e5ac479f78a.png" alt="" /></NavLink>
             <h2>myfitnesspal</h2>
             <div className={style.lscar}>
-                <Link to="/login" className={style.headlog}>Log In</Link>
-                <Link to="/signup">Sign Up</Link>
+                <NavLink to="/login" className={style.headlog}>Log In</NavLink>
+                <NavLink to="/signup">Sign Up</NavLink>
             </div>
         </div>
         <LandingNavbar/>

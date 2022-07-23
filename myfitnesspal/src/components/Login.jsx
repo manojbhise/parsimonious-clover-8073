@@ -9,10 +9,10 @@ import style from "../pages/landing_page/header.module.css";
 import axios from "axios"
 import Alert from '@mui/material/Alert';
 import Snackbar from '@mui/material/Snackbar';
-import {useNavigate} from "react-router-dom"
+import {NavLink, useNavigate} from "react-router-dom"
 import LandingNavbar from '../pages/landing_page/LandingNavbar';
 import LandBody from '../pages/landing_page/LandBody';
-
+import Drawer from '../pages/landing_page/Drawer';
 
 export const Login = () => {
     const [email,setemail] = useState("");
@@ -70,15 +70,15 @@ export const Login = () => {
    
   return (
     <div style={{width:"100%",backgroundColor:"white"}}>
-      
-      <div className={isflag?style.blur:""}>
+        {isflag?<Drawer changeflagtofalse={changeflagtofalse}/>:""}
+    <div className={isflag?style.blur:""}>
         <div className={style.headcar}>
             <i className="fa-solid fa-bars" onClick={changeflagtotrue}></i>
-            <img src="https://i.pinimg.com/originals/53/24/0a/53240a99b0159c5a16937e5ac479f78a.png" alt="" />
+           <NavLink to="/"><img src="https://i.pinimg.com/originals/53/24/0a/53240a99b0159c5a16937e5ac479f78a.png" alt="" /></NavLink>
             <h2>myfitnesspal</h2>
             <div className={style.lscar}>
-                <Link to="/login" className={style.headlog}>Log In</Link>
-                <Link to="/signup">Sign Up</Link>
+                <NavLink to="/login" className={style.headlog}>Log In</NavLink>
+                <NavLink to="/signup">Sign Up</NavLink>
             </div>
         </div>
         <LandingNavbar/>
