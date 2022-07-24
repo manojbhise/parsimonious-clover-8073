@@ -2,16 +2,16 @@
 
 <img width="960" alt="2022-07-24" src="https://user-images.githubusercontent.com/100188131/180634916-f89ab8d1-caa4-4d08-8ebe-2e3f1e450b65.png">
 
-## Technologies we used
+## Tech Stacks:
 <!-- <hr> -->
-- HTML, CSS, ReactJS
+- HTML, CSS, ReactJS, NodeJs, Heroku, MongoDB Atlas, Material-UI, Vercel
 
 ## Live app Link
 - https://myfitnesspal-sigma.vercel.app/
 
 ## Features 
 <!-- --- -->
-- Signup/Login
+- Signup/Login - User Authentication
 - Reusable components
 
 
