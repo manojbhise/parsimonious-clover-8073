@@ -1,5 +1,6 @@
 .Today{
     margin-top: 50px;
+    margin-bottom: 100px;
     width:760px;
     height: 149px;
 
@@ -51,6 +52,7 @@ margin-bottom: 10px;
     width: 750px;
     height:95px;
     outline: none;
+    border: none;
 }
 .input:hover{
     border:none;

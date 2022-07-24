@@ -293,68 +293,68 @@ const Para6 = styled.div`
         width: 70%;
         height: 90%;
         // border: 1px solid red;
-        & > h1:nth-child(1){
+        & > h1:nth-child(1) {
           font-size: 15px;
           font-weight: 550;
           color: black;
           margin-top: 5px;
         }
-        & > p:nth-child(2){
+        & > p:nth-child(2) {
           font-size: 12px;
           // font-weight: 550;
           color: #222229;
           margin-top: 8px;
-          span{
-            color: #0074C7;
-            cursor: pointer;  
-            &:hover{
+          span {
+            color: #0074c7;
+            cursor: pointer;
+            &:hover {
               color: orange;
             }
           }
         }
-        & > h1:nth-child(3){
+        & > h1:nth-child(3) {
           font-size: 15px;
           font-weight: 550;
           color: black;
           margin-top: 8px;
         }
-        & > div:nth-child(4){
+        & > div:nth-child(4) {
           display: flex;
           justify-content: start;
           margin-top: 8px;
-          & > p{
-            color: #00A1E0;
+          & > p {
+            color: #00a1e0;
             font-size: 12px;
             font-weight: 550;
             margin-right: 15px;
           }
         }
-        & > h1:nth-child(5){
+        & > h1:nth-child(5) {
           font-size: 15px;
           font-weight: 550;
           color: black;
           margin-top: 8px;
         }
-        & > div:nth-child(6){
+        & > div:nth-child(6) {
           display: flex;
           margin-top: 8px;
-          & > input:nth-child(1){
+          & > input:nth-child(1) {
             width: 93px;
             height: 26px;
             margin-right: 8px;
           }
-          & > h1:nth-child(2){
+          & > h1:nth-child(2) {
             font-size: 15px;
             font-weight: 550;
             color: black;
             margin-top: 4px;
             margin-right: 20px;
           }
-          & > button:nth-child(3){
+          & > button:nth-child(3) {
             width: 50px;
             height: 29px;
             color: white;
-            background: #5BB65B;
+            background: #5bb65b;
             border-radius: 5px;
             border: 1px solid #888888;
           }
@@ -363,7 +363,7 @@ const Para6 = styled.div`
       & > div:nth-child(2) {
         width: 28%;
         height: 90%;
-        
+
         h1 {
           font-size: 15px;
           font-weight: 550;
@@ -423,25 +423,25 @@ const Para7 = styled.div`
   align-items: center;
   margin-bottom: 50px;
 
-  & > button{
+  & > button {
     width: 190px;
     height: 33px;
     color: white;
-    background: #5BB65B;
+    background: #5bb65b;
     border-radius: 5px;
     border: 1px solid #888888;
   }
-  `;
+`;
 
 const Food = () => {
   const days = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
-    "Sunday",
   ];
   const months = [
     "January",
@@ -486,7 +486,7 @@ const Food = () => {
           </div>
           <div>
             <p>
-              {days[day - 1]}, {months[month + 1]} {date}, {year}
+              {days[day]}, {months[month + 1]} {date}, {year}
             </p>
           </div>
           <div>
@@ -634,7 +634,8 @@ const Food = () => {
             <div>
               <h1>Today's Water Total</h1>
               <p>
-                Aim to drink at least 8 cups of water today. You can quick add common sizes or enter a custom amount. 
+                Aim to drink at least 8 cups of water today. You can quick add
+                common sizes or enter a custom amount.
                 <span>Change Units</span>
               </p>
               <h1>Quick Add</h1>
