@@ -422,7 +422,6 @@ const Para7 = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-  border: 1px solid black;
 
   & > button{
     width: 190px;
