@@ -4,7 +4,7 @@
 
 ## Tech Stacks:
 <!-- <hr> -->
-- HTML, CSS, ReactJS, NodeJs, Heroku, MongoDB Atlas, Material-UI, Vercel
+- HTML, CSS, ReactJS, Express, Heroku, MongoDB Atlas, Material-UI
 
 ## Live app Link
 - https://myfitnesspal-sigma.vercel.app/
