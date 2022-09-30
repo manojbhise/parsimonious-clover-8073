@@ -17,6 +17,7 @@
 
 ## Steps to navigate the website:
 <!-- <hr> -->
+- User needs to login first to explore
 - On the Landing Page you can see Navbar, Body and Footer.
 - To see Home page you need to signup and login.
 - Once user signed in, it'll navigate to Home Page.
